@@ -1,0 +1,54 @@
+
+/*---------- Configuration générale ----------*/
+@import url('https://fonts.googleapis.com/css?family=Delius');
+
+html, body{
+	font-family: Delius, Consolas, sans-serif;
+	background-color : #f4f4f4;
+	box-sizing: border-box;
+	word-break: break-word;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*------------- Message d'acceuil -------------*/
+.salutation{
+	padding: 20px;
+	font-size: 25px;
+}
+
+.presentation{
+	width: 60%;
+	margin: 0px auto;
+	font-size: 20px;
+}
+
+
+.effet-survol:hover{
+	color: rgb(255, 255, 255);
+}
+
+/* ----------------- Media Queries ----------------- */
+@media(max-width: 900px){
+	.presentation{
+		display: block;
+		width: 80%;
+	}
+}
+
+@media(max-width: 550px){
+
+	.presentation{
+		width: 100%;
+	}
+
+	.salutation{
+		margin: 5px 2px;
+		padding: 0px 2px;
+	}
+}
