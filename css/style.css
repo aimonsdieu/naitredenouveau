@@ -28,6 +28,10 @@ a:hover{
 	font-size: 20px;
 }
 
+.effet-survol{
+	color: rgba(255, 255, 255, 0.5);
+}
+
 .effet-survol:hover{
 	color: rgb(255, 255, 255);
 }
