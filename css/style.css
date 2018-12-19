@@ -1,57 +1,71 @@
 
 /*---------- Configuration générale ----------*/
-@import url('https://fonts.googleapis.com/css?family=Delius');
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
 
-html, body{
-	font-family: Delius, Consolas, sans-serif;
+html, body
+{
+	font-family: 'Thasadith', sans-serif;
 	background-color : #f4f4f4;
 	box-sizing: border-box;
 	word-break: break-word;
-
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
 }
 
-a:hover{
+a, a:hover
+{
 	text-decoration: none;
 }
 
-/*------------- Message d'acceuil -------------*/
-.salutation{
-	padding: 20px;
-	font-size: 25px;
+hr 
+{
+	background-color : #80292A;
+	border-color : #80292A;
+	color : #80292A;
 }
 
-.presentation{
+/*------------- Corps -------------*/
+h1, section, footer
+{
 	width: 60%;
+	padding: 20px;
 	margin: 0px auto;
-	font-size: 1rem;
+
+	background-color : white;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #222;
 }
 
-.effet-survol{
-	color: rgba(255, 255, 255, 0.5);
+header
+{
+	padding: 0px;
+	margin-top: 20px;
 }
 
-.effet-survol:hover{
-	color: rgb(255, 255, 255);
+h1
+{
+	font-size: 25px;
+	text-align: center;
+}
+
+footer
+{
+	margin-bottom: 20px;
 }
 
 /* ----------------- Media Queries ----------------- */
 @media(max-width: 900px){
-	.presentation{
-		display: block;
+	h1, section, footer{
 		width: 80%;
 	}
 }
 
 @media(max-width: 550px){
 
-	.presentation{
+	h1, section, footer{
 		width: 100%;
-	}
-
-	.salutation{
-		margin: 5px 2px;
-		padding: 0px 2px;
 	}
 }
